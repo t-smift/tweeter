@@ -1,0 +1,38 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 15px;
+  border: 0.2em;
+  border-style:dotted;
+  
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+}
+
+button {
+  color:blue;
+  mask-type: luminance;
+  border-color: cornflowerblue;
+  font-family: Bungee;
+}
+textarea {
+  background-color: beige;
+}
+
+section h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  justify-self: center;
+}
+
+output {
+  font-family: Bungee;
+}
+
+.tooMany {
+  color: red
+}

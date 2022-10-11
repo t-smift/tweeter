@@ -1,0 +1,31 @@
+nav {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  background-color: #4056A1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  position: fixed
+}
+#title {
+  font-family: "Bungee";
+  font-size: 60px;
+  color: white;
+}
+nav span p {
+  display:flex;
+  align-self:center;
+  color: white;
+}
+nav span i {
+  color:red;
+  margin-top: -22px;
+}
+
+#newTweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
