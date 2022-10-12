@@ -12,6 +12,4 @@ $(document).ready(function() {
       $('.new-tweet output').removeClass('tooMany');
     }
   })
-  
-
 });
