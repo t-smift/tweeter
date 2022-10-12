@@ -34,6 +34,7 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/assault.png");
   margin-left: 5%;
   border: 2px solid black;
+  padding-bottom: 50px;
  }
  .tweets {
   width: 30%;
@@ -53,6 +54,9 @@ body {
   flex-direction: column;
   width: 100%;
   border: 5px solid rgb(84 81 73);
+ }
+ article:hover {
+  box-shadow: 5px 10px #888888;
  }
 
  main header {
@@ -82,5 +86,5 @@ article header img {
 }
 
 i:hover {
-  color: yellow;
+  color: orange;
 }
