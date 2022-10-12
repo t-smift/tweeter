@@ -1,17 +1,27 @@
-form {
-  display: flex;
+.new-tweet {
+  display:flex;
   flex-direction: column;
-  width: 400px;
-  padding: 15px;
-  border: 0.2em;
-  border-style:dotted;
+  align-items: center;
   
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  padding: 5px;
+  border: 5px solid rgb(84 81 73);
+  margin: 20px;
+  
+  
+}
+/* this css gets the counter off to the far right */
 form div {
+  width:100%;
   display: flex;
   flex-direction: row;
-  justify-content:space-between ;
+  justify-content:space-between;
+  
 }
 
 button {
@@ -21,12 +31,23 @@ button {
   font-family: Bungee;
 }
 textarea {
-  background-color: beige;
+  min-width: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 5px solid rgb(84 81 73);
+  color: rgb(84 81 73);
+  height: 72px;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 40px;
+  
 }
 
 section h2 {
   font-family: "Source Sans Pro", sans-serif;
-  justify-self: center;
+  
 }
 
 output {

@@ -31,7 +31,7 @@
       <span id="newTweet"><p><b>Write</b>&nbsp a New Tweet</p>
       <i class="fa-solid fa-angles-down"></i></span>
     </nav>
-    <header>
+    <header class="profile">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -44,7 +44,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <p>First example Tweet</p>
-      <p>We've got a TREMENDOUS army, just the best.</p>
+      <p>Second example tweet.</p>
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="POST">
@@ -56,7 +56,31 @@
           </div>
         </form>
       </section>
-      
+      <div class="tweets">
+        <article>
+          <header>
+            <span id="topTweetLine">
+              <span id="name">
+              <img src="/images/profile-hex.png"> 
+              <p>Isaac Newton</p>
+            </span>
+            <p>@Isaac</p>
+          </span>
+            <p>Hello World!</p>
+          </header>
+          
+          <footer id="tweetFeet">
+            <span>
+            <h5>10 days ago</h5>
+            </span>
+            <span>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-retweet"></i>
+          </span>
+          </footer>
+        </article>
+      </div>
     </main>
   </body>
 </html>

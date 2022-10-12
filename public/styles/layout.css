@@ -19,11 +19,8 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
+  border: 2px solid red;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
  main {
   display: flex;
@@ -33,6 +30,57 @@ body {
   /* align-content: center;
   justify-items: center;
   justify-content: center; */
-  background-color: bisque;
+  background-color:bisque;
+  background-image: url("https://www.transparenttextures.com/patterns/assault.png");
   margin-left: 5%;
+  border: 2px solid black;
  }
+ .tweets {
+  width: 30%;
+  
+ }
+
+ #tweetFeet {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+ }
+ article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 5px solid rgb(84 81 73);
+ }
+
+ main header {
+  width: 100%;
+  height: 150px;
+  border-bottom: 5px solid rgb(84 81 73);
+  padding: 10px;
+}
+
+ main section {
+  width: 35%;
+ }
+
+article header img {
+  width: 50px;
+  height: 50px;
+}
+#name {
+  display: flex;
+  flex-direction: row;
+}
+
+#topTweetLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+i:hover {
+  color: yellow;
+}
