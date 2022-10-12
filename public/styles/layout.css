@@ -48,12 +48,15 @@ body {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
+  
  }
  article {
   display: flex;
   flex-direction: column;
   width: 100%;
   border: 5px solid rgb(84 81 73);
+  margin-bottom: 20px;
+
  }
  article:hover {
   box-shadow: 5px 10px #888888;
