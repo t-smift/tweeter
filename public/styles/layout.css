@@ -38,7 +38,7 @@ body {
   
  }
 
- #tweetFeet {
+ .tweetFeet {
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -61,7 +61,7 @@ body {
 
  main header {
   width: 100%;
-  height: 150px;
+  height: auto;
   border-bottom: 5px solid rgb(84 81 73);
   padding: 10px;
 }
@@ -74,12 +74,18 @@ article header img {
   width: 50px;
   height: 50px;
 }
-#name {
+.tweeter-name {
   display: flex;
   flex-direction: row;
 }
 
-#topTweetLine {
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 100px;
+}
+
+.topTweetLine {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
