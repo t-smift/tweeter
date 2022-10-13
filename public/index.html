@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+   
   </head>
 
   <body>
@@ -43,11 +44,9 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p>First example Tweet</p>
-      <p>Second example tweet.</p>
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST">
+        <form id="submit-new-tweet">
           <label for="tweet-text"></label>
           <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
           <div>
@@ -59,8 +58,8 @@
       <div class="tweets">
         <article>
           <header>
-            <span id="topTweetLine">
-              <span id="name">
+            <span class="topTweetLine">
+              <span class="tweeter-name">
               <img src="/images/profile-hex.png"> 
               <p>Isaac Newton</p>
             </span>
@@ -69,11 +68,11 @@
             <p>Hello World!</p>
           </header>
           
-          <footer id="tweetFeet">
+          <footer class="tweetFeet">
             <span>
             <h5>10 days ago</h5>
             </span>
-            <span>
+            <span class="icons">
             <i class="fa-solid fa-flag"></i>
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-retweet"></i>
@@ -82,8 +81,8 @@
         </article>
         <article>
           <header>
-            <span id="topTweetLine">
-              <span id="name">
+            <span class="topTweetLine">
+              <span class="tweeter-name">
               <img src="/images/profile-hex.png"> 
               <p>John Mills</p>
             </span>
@@ -92,11 +91,11 @@
             <p>What is Justice if not fairness?</p>
           </header>
           
-          <footer id="tweetFeet">
+          <footer class="tweetFeet">
             <span>
             <h5>12 days ago</h5>
             </span>
-            <span>
+            <span class="icons">
             <i class="fa-solid fa-flag"></i>
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-retweet"></i>
