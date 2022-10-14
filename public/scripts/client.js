@@ -20,8 +20,7 @@ const createTweetElement = function (data) {
 const renderTweets = function (tweets) {
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    $('.tweets').prepend($tweet)
-
+    $('.tweets').prepend($tweet);
   }
 };
 
@@ -36,7 +35,7 @@ const loadTweets = function () {
   .catch((err) => {
     console.log(err);
   })
-}
+};
 
 
 $(document).ready(function() {
@@ -54,7 +53,7 @@ $(document).ready(function() {
     if ($form.serialize() === 'text=') {
       $('.error1').attr('class', 'error2'); 
       //adds a class to the error container for styling
-      
+
       $errorContainer.slideDown(500);
       $('#error-msg').text("You forgot to enter a tweet!")
       
@@ -80,6 +79,6 @@ $(document).ready(function() {
     })
   })
 
-
+ 
 });
 

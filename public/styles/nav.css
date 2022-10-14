@@ -22,10 +22,15 @@ nav span p {
 nav span i {
   color:red;
   margin-top: -22px;
+  transition: font-size 500ms;
 }
-
+#newTweet:hover i {
+  transition: font-size 500ms;
+  font-size: 1.5em;
+}
 #newTweet {
   display: flex;
+  min-width: 190px;
   flex-direction: column;
   align-items: center;
   justify-items: center;
