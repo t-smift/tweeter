@@ -1,15 +1,16 @@
 .profile {
+  padding-top: 50px;
+  margin-top: 144px;
   width: 100%;
   min-width: 600px;
-  height: 600px;
+  height: 456px;
   display: flex;
   background-color: #313D5A;
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   /* align-items: center; */
-  justify-content: end;
+  justify-content: center;
   flex-direction: column;
   font-family: "Source Sans Pro", sans-serif;
-  padding-bottom: 20px;
 }
 header div h2 {
   color: #0ea583;

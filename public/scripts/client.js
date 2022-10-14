@@ -48,6 +48,13 @@ $(document).ready(function() {
   const $errorContainer = $('.error1');
   //selects the div element containing all the error html
 
+  $('#submit-new-tweet').hide();
+
+  $('#arrow').on('click', (event) => {
+    $('#submit-new-tweet').slideToggle();
+
+  });
+
   $form.on('submit', (event) => {
     event.preventDefault();
     if ($form.serialize() === 'text=') {
@@ -79,6 +86,5 @@ $(document).ready(function() {
     })
   })
 
- 
 });
 
