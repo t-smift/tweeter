@@ -114,7 +114,8 @@ i:hover {
     padding-top: 0px;
     
 
-  }body {
+  }
+  body {
     flex-direction: row;
     background-color: #EAEAEA;
     align-content: space-between;
@@ -131,4 +132,7 @@ i:hover {
   .tweets {
    margin-top: 100px;
   }
-}
+  .error2 {
+    margin-top: 200px;
+  }
+};

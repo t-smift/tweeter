@@ -3,19 +3,22 @@
 }
 
 .error2 {
-  width: 35%;
+  width: 100%;
+  /* margin-top: 200px; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  border: solid;
+  border-color: #8b0000;
+  border-width: 3px;
+  border-radius: 15px;
 }
 
 #error-msg {
-  font-size: 40px;
+  font-size: 1rem;
   color: #8b0000;
-  border-color: #8b0000;
-  border-width: 5px;
-  border-radius: 15px;
+  
 }
 
 .fa-circle-exclamation {

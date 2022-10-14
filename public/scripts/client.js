@@ -39,21 +39,26 @@ const loadTweets = function () {
 
 
 $(document).ready(function() {
-  //grab the tweet container and store in jquery variable
-  const $tweets = ('.tweets');
-
-  loadTweets();
-
-  const $form = $('#submit-new-tweet');
-  const $errorContainer = $('.error1');
-  //selects the div element containing all the error html
-
+  
+ 
   $('#submit-new-tweet').hide();
 
   $('#arrow').on('click', (event) => {
     $('#submit-new-tweet').slideToggle();
 
   });
+
+  loadTweets();
+
+  //grab the tweet container and store in jquery variable
+  const $tweets = ('.tweets');
+
+  const $form = $('#submit-new-tweet');
+  
+  const $errorContainer = $('.error1');
+  //selects the div element containing all the error html
+
+ 
 
   $form.on('submit', (event) => {
     event.preventDefault();
