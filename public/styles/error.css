@@ -1,0 +1,24 @@
+.error1 {
+  display: none;
+}
+
+.error2 {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#error-msg {
+  font-size: 40px;
+  color: #8b0000;
+  border-color: #8b0000;
+  border-width: 5px;
+  border-radius: 15px;
+}
+
+.fa-circle-exclamation {
+  color: purple;
+  size: 100px;
+}

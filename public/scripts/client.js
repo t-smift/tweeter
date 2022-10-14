@@ -38,6 +38,7 @@ const loadTweets = function () {
   })
 }
 
+
 $(document).ready(function() {
   //grab the tweet container and store in jquery variable
   const $tweets = ('.tweets');
@@ -45,14 +46,23 @@ $(document).ready(function() {
   loadTweets();
 
   const $form = $('#submit-new-tweet');
-  
+  const $errorContainer = $('.error1');
+  //selects the div element containing all the error html
+
   $form.on('submit', (event) => {
     event.preventDefault();
     if ($form.serialize() === 'text=') {
-      return alert("Please enter a tweet!");
+      $('.error1').attr('class', 'error2'); 
+      //adds a class to the error container for styling
+      
+      $errorContainer.slideDown(500);
+      $('#error-msg').text("You forgot to enter a tweet!")
+      
+      return;
     }
     if ($form.serialize().length - 5 > 140) {
-      return alert("You tweet is too damn long!");
+      $('#error-msg').text("You tweet is too damn long!");
+      return;
     }
     const newTweetData = $form.serialize();
 

@@ -1,11 +1,12 @@
 nav {
   height: 120px;
+  min-width: 600px;
   width: 100%;
   display: flex;
   background-color: #4056A1;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: 3em;
   position: fixed
 }
 #title {

@@ -15,11 +15,13 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
+  background-color: #ffffff;
+  font-size: 1.5rem;
   font-family: "Source Sans Pro", sans-serif;
-  border: 2px solid red;
 }
 
  main {
@@ -27,15 +29,17 @@ body {
   width: 90%;
   flex-direction: column;
   align-items: center;
-  background-color:bisque;
-  background-image: url("https://www.transparenttextures.com/patterns/assault.png");
+  justify-content: center;
+  justify-items: center;
+  background-color: #EAEAEA;
   margin-left: 5%;
-  border: 2px solid black;
   padding-bottom: 50px;
+  margin-bottom: 50px;
  }
  .tweets {
   width: 30%;
-  
+  min-width: 320px;
+  max-width: 600px;
  }
 
  .tweetFeet {
@@ -49,6 +53,7 @@ body {
  }
  article {
   display: flex;
+  
   flex-direction: column;
   width: 100%;
   border: 5px solid rgb(84 81 73);
@@ -93,4 +98,9 @@ article header img {
 
 i:hover {
   color: orange;
+}
+
+@media only screen and (min-width: 1024px) {
+  
+
 }
