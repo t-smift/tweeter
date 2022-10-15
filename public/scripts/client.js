@@ -52,6 +52,7 @@ $(document).ready(function() {
 });
 
 
+//combines all the functions below to render each new tweet without page refresh
 const loadTweets = function () {
   $.ajax({
     url: '/tweets',
@@ -72,6 +73,7 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
+//takes newly safe submitted tweet and creates HTML
 const createTweetElement = function (data) {
   const tweetTime = timeago.format(data.created_at); 
   const tweetBody = escape(data.content.text);
@@ -79,6 +81,7 @@ const createTweetElement = function (data) {
   return result;
 };
 
+//adds new HTML to front of the list of tweets
 const renderTweets = function (tweets) {
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
