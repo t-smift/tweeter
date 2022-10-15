@@ -1,5 +1,5 @@
 # Tweeter Project
-A simple one page AJAX-based app, similar but far superior to twitter, that uses jQuery, HTML5, CSS3 to showcase front end development and styling cpabilities. 
+A simple one page AJAX-based app, similar but far superior to twitter, that uses jQuery, HTML5, CSS3 to showcase front end development and styling capabilities. 
 
 ## Final Product
 
