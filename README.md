@@ -1,6 +1,11 @@
 # Tweeter Project
 A simple one page AJAX-based app, similar but far superior to twitter, that uses jQuery, HTML5, CSS3 to showcase front end development and styling cpabilities. 
 
+## Final Product
+
+!["Screenshot of Home Page for Desktop"](https://github.com/t-smift/tweeter/blob/master/docs/full-width-home.png?raw=true)
+
+!["Screenshot of Home Page for Mobile"](https://github.com/t-smift/tweeter/blob/master/docs/mobile-size-home.png?raw=true)
 ## Dependencies
 
 - Express
