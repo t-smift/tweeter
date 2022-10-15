@@ -6,7 +6,9 @@ A simple one page AJAX-based app, similar but far superior to twitter, that uses
 - Express
 - Node 5.10.x or above
 - NoDemon
-- 
+- Body Parser
+- MD5
+- Chance
 
 ## Getting Started
 
@@ -15,5 +17,8 @@ A simple one page AJAX-based app, similar but far superior to twitter, that uses
 3. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
+5. You should be able to submit new tweets for a randomly generated user and username.
+6. The app will resize and shift its layout to ensure excellent display accross all popular modern viewport widths. 
+7. New tweets will be logged at the top of the list, and will remain as long as the server is running. 
 
 
