@@ -52,9 +52,11 @@ body {
   align-items: center;
   
  }
+ 
  h5 {
   padding-left: 5px;
  }
+
  article {
   display: flex;
   flex-direction: column;
@@ -84,6 +86,7 @@ article header img {
   width: 50px;
   height: 50px;
 }
+
 .tweeter-name {
   display: flex;
   flex-direction: row;
@@ -112,27 +115,29 @@ i:hover {
     max-width: 750px;
     justify-content: center;
     padding-top: 0px;
-    
-
   }
+
   body {
     flex-direction: row;
     background-color: #EAEAEA;
     align-content: space-between;
   }  
+
   main {
     background-color: #EAEAEA;
-    
   }
-  
+
   #submit-new-tweet {
     margin-top: 300px;
     margin-bottom: 0px;
   }
+
   .tweets {
    margin-top: 100px;
   }
-  .error2 {
+
+  .error {
+    margin-bottom: -200px;
     margin-top: 200px;
   }
 };

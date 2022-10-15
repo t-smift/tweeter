@@ -1,10 +1,5 @@
-.error1 {
-  display: none;
-}
-
-.error2 {
+.error {
   width: 100%;
-  /* margin-top: 200px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,7 +13,6 @@
 #error-msg {
   font-size: 1rem;
   color: #8b0000;
-  
 }
 
 .fa-circle-exclamation {
