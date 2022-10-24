@@ -28,12 +28,16 @@ $(document).ready(function() {
     }
 
     //error for too many characters
-    if ($form.serialize().length - 5 > 140) {
+    const dataArray = $form.serializeArray();
+    const dataToText = dataArray[0].value;
+    console.log(dataArray)
+    if (dataToText.length > 140) {
       $errorContainer.slideDown(2500);
       $('#error-msg').text("You tweet is too damn long!");
       $errorContainer.slideUp(1000);
       return;
     }
+
 
     const newTweetData = $form.serialize();
     $.ajax({
@@ -43,7 +47,7 @@ $(document).ready(function() {
     })
     .then(() => {
       loadTweets()
-      $('textarea').val("")
+      $('textarea').val("").trigger("input")
     })
     .catch((err) => {
       console.log(err)
